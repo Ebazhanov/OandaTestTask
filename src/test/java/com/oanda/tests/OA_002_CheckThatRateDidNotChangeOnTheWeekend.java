@@ -17,7 +17,7 @@ public class OA_002_CheckThatRateDidNotChangeOnTheWeekend extends SeleniumBaseTe
     @Description("Test case to check that rate did not change on the weekend")
     @Title("Change end date and check rate")
     @Test(groups = {smokeTest})
-    public void _ConvertUsdToEur() {
+    public void _ChangeEndDateAndCheckRate() {
         new ConverterMainPage()
                 .navigateToUrl("OANDA_URL")
                 .checkTitleOfThePage("CONVERTER_TITLE")
