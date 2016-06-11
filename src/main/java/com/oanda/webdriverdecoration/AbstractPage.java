@@ -53,14 +53,6 @@ public abstract class AbstractPage {
         return fluentWait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    public WebElement getElementByNoThrow(By locator) {
-        try {
-            return waitForPresenceOfElementLocatedBy(locator);
-        } catch (Exception ignore) {
-            return null;
-        }
-    }
-
     public Boolean waitForTextToBePresentInElementValueByAttribute(WebElement locator, String text) {
         return fluentWait.until(ExpectedConditions.textToBePresentInElementValue(locator, text));
     }
